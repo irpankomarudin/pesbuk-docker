@@ -14,12 +14,12 @@ spec:
     spec:
       containers:
       - name: php-pesbuk
-        image: elqahtani/php-pesbuk
+        image: irpank/pesbuk-app
         ports:
           - containerPort: 80
         env:
         - name: DB_HOST
-          value: "dbsosmedaushafy.cg2lssnpgr5u.ap-southeast-1.rds.amazonaws.com"
+          value: "database-app.ch1pzpidls28.ap-northeast-2.rds.amazonaws.com"
         - name: DB_USER
           valueFrom:
             secretKeyRef:
